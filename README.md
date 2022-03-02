@@ -16,6 +16,7 @@ URI parameters: []
 -------------------------------------------------------
 Path: /pets
 Method: post
+URI parameters: []
 -------------------------------------------------------
 Path: /pets/{petId}
 Method: get
