@@ -6,21 +6,66 @@
    ** spec_format ** MUST BE EITHER JSON OR YAML
 </pre>
 <pre>
-Example with Petstore openapi file
+Example with a YAML openapi file
 
-URL: http://petstore.swagger.io/v1
+URL: http://localhost:5000/
 -------------------------------------------------------
-Path: /pets
+Path: /createdb
 Method: get
 URI parameters: []
 -------------------------------------------------------
-Path: /pets
+Path: /
+Method: get
+URI parameters: []
+-------------------------------------------------------
+Path: /users/v1
+Method: get
+URI parameters: []
+-------------------------------------------------------
+Path: /users/v1/_debug
+Method: get
+URI parameters: []
+-------------------------------------------------------
+Path: /users/v1/register
 Method: post
 URI parameters: []
+Body: {'username': {'type': 'string'}, 'password': {'type': 'string'}, 'email': {'type': 'string'}}
 -------------------------------------------------------
-Path: /pets/{petId}
+Path: /users/v1/login
+Method: post
+URI parameters: []
+Body: {'username': {'type': 'string'}, 'password': {'type': 'string'}}
+-------------------------------------------------------
+Path: /users/v1/{username}
 Method: get
-URI parameters: [{'path_name': 'petId', 'type': 'string'}]
+URI parameters: [{'path_name': 'username', 'type': 'string'}]
+-------------------------------------------------------
+Path: /users/v1/{username}
+Method: delete
+URI parameters: [{'path_name': 'username', 'type': 'string'}]
+-------------------------------------------------------
+Path: /users/v1/{username}/email
+Method: put
+URI parameters: [{'path_name': 'username', 'type': 'string'}]
+Body: {'email': {'type': 'string'}}
+-------------------------------------------------------
+Path: /users/v1/{username}/password
+Method: put
+URI parameters: [{'path_name': 'username', 'type': 'string'}]
+Body: {'password': {'type': 'string'}}
+-------------------------------------------------------
+Path: /books/v1
+Method: get
+URI parameters: []
+-------------------------------------------------------
+Path: /books/v1
+Method: post
+URI parameters: []
+Body: {'book_title': {'type': 'string'}, 'secret': {'type': 'string'}}
+-------------------------------------------------------
+Path: /books/v1/{book}
+Method: get
+URI parameters: [{'path_name': 'book', 'type': 'string'}]
 -------------------------------------------------------
 </pre>
 
