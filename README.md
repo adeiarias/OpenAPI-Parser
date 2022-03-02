@@ -8,7 +8,7 @@
    For example:
    If the openapi file is "openapi3.yaml"
    python openapi_parser.py openapi3.yaml yaml
-   The second argument to specify file format is not key sensitive, so it could also be writen as YAML or Yaml
+   The second argument to specify file format is not key sensitive, so it could also be written as YAML or Yaml
 </pre>
 <pre>
 Example with a YAML openapi file
