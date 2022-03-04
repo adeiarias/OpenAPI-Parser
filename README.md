@@ -1,13 +1,11 @@
 # OpenAPI-Parser
 
 ## USAGE
-<pre>
 [*] USAGE: python openapi_parser.py spec_file spec_format
 ** spec_format ** MUST BE EITHER JSON OR YAML
 
 For example:
-If the openapi file is "openapi3.yaml"
-</pre>
+If the openapi file is "openapi3.yaml", use the following command:
 ```
 python openapi_parser.py openapi3.yaml yaml
 ```
@@ -75,4 +73,3 @@ Method: get
 URI parameters: [{'path_name': 'book', 'type': 'string'}]
 -------------------------------------------------------
 </pre>
-
